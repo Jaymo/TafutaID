@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tafuta.android.app"
+    android:versionCode="1"
+    android:versionName="1.1.0" android:installLocation="auto" >
+    
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    
+          <application
+           android:icon="@drawable/icon_launcher"
+           android:label="@string/app_name" >
+         <uses-library android:name="com.google.android.maps" />
+         <activity android:name=".TafutaHome" 
+            android:label="@string/description_logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+         
+           <activity android:name=".TafutaSearchId" 
+            android:label="@string/description_logo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+                
+			<activity android:name=".TafutaSubmitId" 
+			android:label="@string/description_submit" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			</activity>
+			
+			<activity android:name=".TafutaSettings" 
+			android:label="@string/description_settings"
+			android:theme="@style/Theme.D1">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			</activity>
+			
+			<activity android:name=".TafutaSearchAppeal" 
+			android:label="@string/description_search_appeal"
+			android:theme="@style/Theme.D1">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			</activity>
+			
+			<activity android:name=".TafutaDisplayID" 
+			android:label="@string/display"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Dialog"> 
+			</activity>
+			
+			<activity android:name=".TafutaSocial" 
+            android:theme="@android:style/Theme.Dialog"> 
+			</activity>
+			
+			<activity android:name=".TafutaSubmit" 
+			android:label="@string/description_submit">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			</activity>
+				
+           <activity android:name=".TafutaAbout"
+            android:label="@string/about_dialog"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Dialog">     
+        </activity>
+                
+    </application>
+</manifest>

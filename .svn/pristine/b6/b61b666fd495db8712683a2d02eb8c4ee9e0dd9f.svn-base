@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="updateOptions">
+		<item>Highest Precision</item>
+		<item>Medium Precision</item>
+		<item>Lowest Precision</item>
+	</string-array>
+	<string-array name="updateIndex">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+  <string-array name="type">
+	    <item>Select ID Type</item>
+		<item>National ID Card</item>
+	</string-array>   
+</resources>

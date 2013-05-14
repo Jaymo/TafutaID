@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/db1_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+    
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:orientation="vertical" > 
+             <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_weight="15"
+            android:orientation="vertical" />  
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal" >
+
+   <TextView
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="Type of ID:"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <Spinner
+        android:id="@+id/spn"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="312.97"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/spn_id_prompt" />
+
+</LinearLayout>
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal" >
+
+  <TextView
+       android:layout_width="123dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dip"
+       android:text="First Name:"
+       android:textColor="#ffffffff"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:typeface="serif" />
+   <EditText
+        android:id="@+id/firstname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="textPersonName"/>
+        </LinearLayout>
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Middle Name:"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    <EditText 
+        android:id="@+id/middlename" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:hint="Middle Name" 
+        android:inputType="textPersonName"
+        android:windowSoftInputMode="adjustPan"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Last Name:"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:inputType="textPersonName" 
+        android:windowSoftInputMode="adjustPan"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal" >
+
+   <TextView
+         android:layout_width="123dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dip"
+         android:text="Id Number:"
+         android:textColor="#ffffffff"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:typeface="serif" />
+    <EditText
+        android:id="@+id/idnumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id Number"
+        android:maxLength="9"
+        android:numeric="integer"
+        android:windowSoftInputMode="adjustPan"/>
+        </LinearLayout>
+        
+  <RelativeLayout 
+        android:id="@id/relativeLayout1" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="73dp"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+                    
+ </RelativeLayout>
+      
+ </LinearLayout>
+
+</ScrollView>
+
+        

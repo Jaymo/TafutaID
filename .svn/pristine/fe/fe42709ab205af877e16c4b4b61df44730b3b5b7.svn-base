@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+			
+			
+			<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.65"
+     android:orientation="horizontal" >
+
+  <TextView
+       android:layout_width="126dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dip"
+       android:text="First Name:"
+       android:textColor="#000000"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:typeface="serif" />
+   <TextView
+       android:id="@+id/firstname"
+       android:layout_width="126dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dip"
+       android:textSize="14sp"
+       android:textColor="#ffffffff"
+       android:textStyle="bold"
+       android:typeface="serif" />
+        </LinearLayout>
+        
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.62"
+           android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Middle Name:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    <TextView
+            android:id="@+id/middlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:orientation="horizontal" >
+
+        <TextView   
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Last Name:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:typeface="serif" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.47"
+        android:orientation="horizontal" >
+
+   <TextView
+         android:layout_width="123dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dip"
+         android:text="Id Number:"
+         android:textColor="#000000"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:typeface="serif" />
+    <TextView
+         android:id="@+id/id_number"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dip"           
+         android:textSize="14sp"
+         android:textColor="#ffffffff"
+         android:textStyle="bold"
+         android:typeface="serif" />
+        </LinearLayout>
+
+       
+ 
+     <com.google.android.maps.MapView
+		android:id="@+id/mapview" 
+		android:layout_width="fill_parent"
+		android:layout_height="400dip" 
+		android:apiKey="@string/google_maps_api_key"
+		android:enabled="true" 
+		android:clickable="true" />
+            
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#c6c3c6"
+        android:minHeight="54dip"
+        android:paddingTop="4dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip">
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dip"
+            android:text="Contact"
+            android:onClick="contact" />
+    </FrameLayout>
+</LinearLayout>

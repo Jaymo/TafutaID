@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <CheckBoxPreference
+  	android:key = "sms"
+  	android:title = "@string/smsPrefs_title"
+  	android:summary = "@string/smsPrefs_summary"
+  	android:defaultValue = "false" />
+  	
+ 
+  <EditTextPreference
+    android:name="EditText Preference"
+    android:summary="@string/userPrefs_summary"
+    android:defaultValue=""
+    android:title="@string/userPrefs_title"
+    android:key="edituserPref" />
+    
+  <EditTextPreference
+    android:name="EditText Preference"
+    android:summary="@string/phonePrefs_summary"
+    android:defaultValue=""
+    android:title="@string/phonePrefs_title"
+    android:numeric="integer"
+    android:key="editphonePref" />
+  
+  <ListPreference
+    android:title="@string/gpsPrefs_title"
+    android:summary="@string/gpsPrefs_summary"
+    android:key="gpsPref"
+    android:defaultValue="1"
+    android:entries="@array/updateOptions"
+    android:entryValues="@array/updateIndex" />
+  
+
+</PreferenceScreen>

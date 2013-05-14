@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/bg">
+  <LinearLayout style="@style/TitleBar"
+                android:id="@+id/top">
+         <TextView style="@style/TitleBarText"/>
+        <Button
+        android:id="@+id/send"
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="73dp"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+        <!-- Parent layout starts -->
+        <LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			 android:orientation="vertical"
+			android:padding="10dip">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="15px">
+				
+            <LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="15px">
+			    <TextView android:id="@+id/lbl_title" 
+			        android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textStyle="bold"
+					android:textColor="@drawable/title_color" />
+			    </LinearLayout>
+			    
+				<TextView android:id="@+id/lbl_firstname" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="@drawable/title_color"
+					android:textStyle="bold" android:textSize="18sp" android:text="First Name:" />
+
+				<EditText android:id="@+id/edtext_firstname"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:capitalize="words" android:autoText="true" />
+
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="15px">
+			    
+				<TextView android:id="@+id/lbl_middlename" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="@drawable/title_color"
+					android:textStyle="bold" android:textSize="18sp" android:text="Middle Name:" />
+
+				<EditText android:id="@+id/edtext_middlename"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:capitalize="words" />
+
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="15px">
+			    
+				<TextView android:id="@+id/lbl_lastname" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="@drawable/title_color"
+					android:textStyle="bold" android:textSize="18sp" android:text="last Name:" />
+
+				<EditText android:id="@+id/edtext_lastname"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:capitalize="words"  />
+
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="15px">
+			    
+				<TextView android:id="@+id/lbl_idnumber" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="@drawable/title_color"
+					android:textStyle="bold" android:textSize="18sp" android:text="ID Number:" />
+
+				<EditText android:id="@+id/edtext_idnumber"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+				    android:numeric="integer"/>
+
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="15px">
+				
+			    
+				<TextView android:id="@+id/lbl_phonenumber" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="@drawable/title_color"
+					android:textStyle="bold" android:textSize="18sp" android:text="Phone Number:" />
+
+				<EditText android:id="@+id/edtext_phonenumber"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					 android:numeric="integer" android:maxLength="13"/>
+
+			</LinearLayout>
+			
+			<com.google.android.maps.MapView
+					android:id="@+id/mapview" android:layout_width="fill_parent"
+					android:layout_height="300dip" android:apiKey="@string/google_maps_api_key"
+					android:enabled="true" android:clickable="true" />
+
+				<TextView android:textStyle="bold" android:gravity="center_horizontal"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="@drawable/title_color" android:id="@+id/latlon" />
+			
+            
+    
+    </LinearLayout>      
+    <!-- Parent layout ends. -->
+	</ScrollView>
+</LinearLayout>
